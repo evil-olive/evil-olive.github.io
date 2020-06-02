@@ -1,0 +1,151 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    transition: all .4s;
+    text-decoration: none;
+    color: #fff;
+}
+img{
+    width: 100%;
+    transition: all .4s;
+}
+
+
+section{
+    background: #000;
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    width: 100%
+    margin: 0 auto;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 30px 15px 0px 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+header{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header h1{
+    margin: 0;
+    font-size: 130px;
+    color: rgba(210, 218, 226,1.0);
+    font-weight: 600;
+    }
+header .vertical{
+    display: inline;
+}
+header p{
+    font-size: 23px;
+    color: #fff;    
+}
+header h2{
+    margin: 0;
+    font-size: 30px;
+    color: rgba(210, 218, 226,1.0);
+    font-weight: 400;
+    writing-mode: vertical-rl;
+    padding: 0;
+}
+.me{
+    position: relative;
+    overflow: hidden;
+    max-height: 600px;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px #4bcffa
+    transition: all .4s; 
+}
+.me:hover{
+    box-shadow: scale(1.1);
+    transition: all .4s;
+}
+.me:hover img{
+    transform: scale(3.3);
+    transition: all .4s;
+}
+.major{
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    width: 100%;
+    color: #fff;
+    padding: 10px 5px;
+    background:  linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(176,209,232,0.3) 100%);
+}
+.me:hover .major{
+    bottom: 0;
+    transition: all .4s;
+}
+
+.major h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.major h3 span{
+    display: block;
+    font-size: 60%;
+    margin-top: 5px;
+    font-weight: 600;
+    color: rgba(128, 142, 155,1.0);
+}
+.major a{
+    font-size: 14px;
+    font-weight: 500;
+}
+.major .btn{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-weight: 400;
+}
+.major .btn:hover{
+    background: rgba(30, 39, 46,1.0);
+    transition: all .4s;
+    text-decoration: none;
+}
+.major a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+@media (max-width:992px) {
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media (max-width: 767px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    header{
+        width: 95%
+    }
+    .major{
+        bottom: 0;
+    }
+}
+@media (max-width: 500px) {
+    main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
